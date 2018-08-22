@@ -10,8 +10,8 @@ node {
             integrationBranch: 'master', 
             repoName: 'origin')], 
             submoduleCfg: [], 
-            userRemoteConfigs: [[credentialsId: 'sofusalbertsen', //remember to change credentials and url.
-            url: 'git@github.com:sofusalbertsen/pretested_jenkins.git']]])
+            userRemoteConfigs: [[credentialsId: 'frederikmadsen', //remember to change credentials and url.
+            url: 'git@github.com:Hugzy/pretested_jenkins.git']]])
     }
     stage("test"){
         // run maven tests here
