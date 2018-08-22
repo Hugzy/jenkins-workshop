@@ -11,7 +11,7 @@ node {
             repoName: 'origin')], 
             submoduleCfg: [], 
             userRemoteConfigs: [[credentialsId: 'frederikmadsen', //remember to change credentials and url.
-            url: 'git@github.com:Hugzy/pretested_jenkins.git']]])
+            url: 'git@github.com:Hugzy/jenkins-workshop.git']]])
     }
     stage("test"){
         // run maven tests here
