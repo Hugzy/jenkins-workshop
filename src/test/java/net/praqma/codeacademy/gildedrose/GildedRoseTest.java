@@ -20,7 +20,7 @@ public class GildedRoseTest {
         Item[] items = new Item[] {new Item("bar", 2, 30)};
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals("testfails", app.items[0].name);
+        assertEquals("bar", app.items[0].name);
     }
 
 }
