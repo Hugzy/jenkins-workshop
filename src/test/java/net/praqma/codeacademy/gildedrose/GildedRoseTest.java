@@ -55,4 +55,12 @@ public class GildedRoseTest {
         assertEquals("test", app.items[0].name);
     }
 
+    @Test
+    public void aVeryGoodNewTest() {
+        Item[] items = new Item[] {new Item("test", 2, 30)};
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals("test", app.items[0].name);
+    }
+
 }
