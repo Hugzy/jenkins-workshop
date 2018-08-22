@@ -1,6 +1,6 @@
 node {
    stage ('Preperation'){
-       checkout scm credentialsId: 'frederikmadsen', url: 'git@github.com:Hugzy/jenkins-workshop.git'
+       checkout scm
    }
    stage ('Build'){
        sh 'docker run -i -v $PWD:/usr/src/mymaven -w /usr/src/mymaven --rm maven:3-jdk-8 mvn clean package'
