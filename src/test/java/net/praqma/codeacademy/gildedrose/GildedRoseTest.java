@@ -23,4 +23,12 @@ public class GildedRoseTest {
         assertEquals("bar", app.items[0].name);
     }
 
+    @Test
+    public void spam() {
+        Item[] items = new Item[] {new Item("bar", 2, 30)};
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals("bar", app.items[0].name);
+    }
+
 }
